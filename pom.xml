@@ -23,6 +23,13 @@
 			<version>${karate.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-testng -->
+		<dependency>
+			<groupId>com.intuit.karate</groupId>
+			<artifactId>karate-testng</artifactId>
+			<version>0.8.0.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
