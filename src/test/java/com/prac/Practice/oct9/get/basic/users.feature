@@ -38,7 +38,7 @@ Feature: Learning!
     
     
     
-  #creatign post request to add user
+  #creatign post request to add user and validate resonse
   Scenario: Scenario 2 :) POST method and Matches
   * def jsonPayload = {'name':'Demon Knight :)'}
   * print 'json Payload:', jsonPayload
