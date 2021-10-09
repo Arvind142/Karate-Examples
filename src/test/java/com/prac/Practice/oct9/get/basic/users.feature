@@ -1,4 +1,4 @@
-Feature: Get with request and query parameter
+Feature: Learning!
 
   Background:
     * url 'https://jsonplaceholder.typicode.com'
@@ -55,10 +55,11 @@ Feature: Get with request and query parameter
     #payload comparison with response content TYPE match
     And match response == {'id':'#notnull','name':'#present'}
     #payload comparison with response content EXACT match with constant value
-    And match response == {'id':'#notnull','name':'Demon Knight :)'}
-    #payload comparison with response content EXACT match with expected from injected json value
+    And match response == {'id':11,'name':'Demon Knight :)'}
+    #payload comparison with response content EXACT match with expected from injected json/response
+    And print 'the value of id field in response payload is:', response.id
     And print 'the value of name field in json payload is:', jsonPayload.name
-    And match response == {'id':'#notnull','name':'#(jsonPayload.name)'}
+    And match response == {'id':'#(response.id)','name':'#(jsonPayload.name)'}
     
     
     
