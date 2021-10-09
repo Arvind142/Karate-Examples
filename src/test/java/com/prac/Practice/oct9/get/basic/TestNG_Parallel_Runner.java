@@ -6,7 +6,6 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
 
 class TestNG_Parallel_Runner {
-
 	@Test
 	void testParallel() {
 		// below line is used to point out where we have feature with path method
@@ -15,5 +14,4 @@ class TestNG_Parallel_Runner {
 				.parallel(5);
 		assertEquals(0, results.getFailCount(), results.getErrorMessages());
 	}
-
 }

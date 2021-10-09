@@ -29,7 +29,12 @@
 			<artifactId>karate-testng</artifactId>
 			<version>0.8.0.1</version>
 		</dependency>
-
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>5.3.1</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
