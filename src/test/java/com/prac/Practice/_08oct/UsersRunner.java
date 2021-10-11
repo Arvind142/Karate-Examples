@@ -1,4 +1,4 @@
-package com.prac.Practice._8oct;
+package com.prac.Practice._08oct;
 
 import com.intuit.karate.junit5.Karate;
 
