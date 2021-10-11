@@ -2,7 +2,7 @@ Feature: Learning!
 
   Background:
     * url 'https://jsonplaceholder.typicode.com'
-
+  @Oct11
   Scenario: get all users(/users) ->get first user(/users/id)->get first user with (user?id=value)
   
     #url created would be '/users' appended to url mentioned in background (i.e. https://jsonplaceholder.typicode.com/users)
@@ -38,6 +38,7 @@ Feature: Learning!
   
   
   #creatign post request to add user and response validation(all types of checks)
+  @Oct11
   Scenario: Post payload to /users then check status code for 201 then validation of payload/field/field type validation
   * def jsonPayload = {'name':'Demon Knight', 'age': null,'isValidPassport':true}
   * print 'json Payload:', jsonPayload

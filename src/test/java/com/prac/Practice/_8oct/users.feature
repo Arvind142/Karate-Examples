@@ -2,7 +2,7 @@ Feature: Get with request and query parameter
 
   Background:
     * url 'https://jsonplaceholder.typicode.com'
-
+	@Oct8
   Scenario: get first user and validate name - GET as query parameter and path parameter
   
     #url created would be '/users' appended to url mentioned in background (i.e. https://jsonplaceholder.typicode.com/users)
