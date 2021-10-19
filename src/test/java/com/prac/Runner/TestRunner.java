@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 class TestRunner {
 	@Test
 	void testParallel() {
-		Results results = Runner.path("classpath:com/prac").tags("Oct12").parallel(1);
+		Results results = Runner.path("classpath:com/prac").tags("Oct18").parallel(2);
 		assertEquals(0, results.getFailCount(), results.getErrorMessages());
 	}
 }
